@@ -1,0 +1,147 @@
+
+# Değer Atama
+MyString <- "Computer Engineer"
+print(MyString)
+
+pi
+# [1] 3.141593
+
+
+
+#Vektör Oluşturma
+vk <- c(4,6,6,12)
+vk
+
+list1 <- list(c(1,2,3),25,4,sin)
+print(list1)
+# Output
+[[1]]
+[1] 1 2 3
+
+[[2]]
+[1] 25
+
+[[3]]
+[1] 4
+
+[[4]]
+function (x)  .Primitive("sin")
+
+
+
+
+
+# kısa fonksiyonlar
+x<-5
+y<-12
+z<- c(1,3,4)
+
+sum(z) # 8
+prod(x,y) #60
+sqrt(y) # 3.464102
+abs(x) #mutlakdeğer
+log(y) # 2.484907
+sin(x) / cos(x) #-3.380515
+max(z)#4
+min(z)#1
+
+
+
+# Seriler
+m <- 1:10
+m #  1  2  3  4  5  6  7  8  9 10
+
+o <- 20:12
+o # 20 19 18 17 16 15 14 13 12
+
+# 0'dan 1'e kadar 0.2 artarak
+m <- seq(0,1, by=0.2)
+m # 0.0 0.2 0.4 0.6 0.8 1.0
+
+y <- seq(1,5,by=0.4)
+y # 1.0 1.4 1.8 2.2 2.6 3.0 3.4 3.8 4.2 4.6 5.0
+
+
+# 0'dan 120e kadar 4 tane sayı oluşturma
+yy <- seq(0,120, length.out=4)
+yy #  0  40  80 120
+
+# uzunlugunu bulma
+length(m) #6
+
+
+# string türünde vektör oluşturma
+arr <- c("Ceng","Engineer","Data")
+
+# türünü söyler
+class(arr) #  "character"
+
+# tekrarlamak için 4 elemanını 5 kere tekrar et
+rep(4,5) # 4 4 4 4 4
+
+# seri
+
+seri <- 2:25
+head(seri) # ilk 5 elemanı gösterir
+tail(seri) # son 5 elemanı gösterir
+head(seri,6) # ilk 6 değeri gösterir
+
+# R'd index 1'den başlar
+seri[4] # 4.elemanını göserir
+seri[1:4] # 1den 4.elemanını kadarki elamanları gösterir. 4.eleman dahil
+
+
+
+xx <- 20:30
+#oluşturulan serinin index elemanlarını alıp vektör oluşturma
+xx[c(2,4,6)] #outp:  21, 23, 25
+
+
+#Create a matrix
+#byow = satır satır anlamında
+M = matrix( c('e','n','g','i','n','e','e','r'), nrow=2, ncol=4, byrow=TRUE)
+print(M)
+# Output
+[,1] [,2] [,3] [,4]
+[1,] "e"  "n"  "g"  "i"
+
+
+
+#vektör
+
+courses_note <- c(72,85,88,98)
+courses_note <- c(calculus=72, datascience=85, ai=88, ml=98)
+courses_note
+
+#output
+calculus datascience          ai          ml
+72          85          88          98
+
+# yukardakinin aynısı
+names(courses_note) <- c("data","science","ml","dl")
+
+# PLOT
+plot(courses_note)
+
+#install packet
+install.packages("tidyverse")
+library(tidyverse)
+
+#tibble ile tablo şelinde çıktı elde etmek
+cank <- 1:5 # 1 2 3 4 5
+ceng <- cank *2 # 2 4 6 8 10
+
+cank.ceng<- tibble(cank,ceng)
+cank.ceng
+
+#output
+1     1     2
+2     2     4
+3     3     6
+4     4     8
+5     5    10
+
+
+
+
+
